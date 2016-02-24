@@ -17,15 +17,16 @@
 #include <QWidget>
 #include <QTranslator>
 #include <QLocale>
-#include "info.h"
 
 
 
 namespace Ui {
 class Menu;
 class Settings;
+class Info;
 }
 
+/////Settings window///////////
 class Settings : public QWidget
 {
     Q_OBJECT
@@ -44,6 +45,24 @@ private:
     Ui::Settings *ui;
 };
 
+/////Info window//////
+namespace Ui {
+class Info;
+}
+
+class Info : public QWidget
+{
+    Q_OBJECT
+
+public:
+    explicit Info(QWidget *parent = 0);
+    ~Info();
+
+private:
+    Ui::Info *ui;
+};
+
+/////Main Menu///////
 class Menu : public QMainWindow
 {
     Q_OBJECT

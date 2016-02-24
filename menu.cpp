@@ -1,6 +1,7 @@
 #include "menu.h"
 #include "ui_menu.h"
 #include "ui_settings.h"
+#include "ui_info.h"
 
 bool   scanOn          = false;         //scanning mode or not
 bool   isLogin         = false;         //authorized or not
@@ -51,6 +52,13 @@ Settings::Settings(QWidget *parent) :
     ui->checkBox_profit->setChecked(ignoreNonProfit);
     ui->doubleSpinBox_hold->setValue(delay);
 }
+
+Info::Info(QWidget *parent) :
+    QWidget(parent),
+    ui(new Ui::Info)
+{
+    ui->setupUi(this);
+}
 //////////////////////////////////////////////////////////////////////////////////
 Menu::~Menu()
 {
@@ -58,6 +66,11 @@ Menu::~Menu()
 }
 //------------------------------------------------------------
 Settings::~Settings()
+{
+    delete ui;
+}
+//------------------------------------------------------------
+Info::~Info()
 {
     delete ui;
 }
