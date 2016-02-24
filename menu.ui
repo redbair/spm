@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Menu</class>
+ <widget class="QMainWindow" name="Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>442</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SPM</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="spmres.qrc">
+    <normaloff>:/logo.png</normaloff>:/logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox_games">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>651</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Games</string>
+    </property>
+    <widget class="QPushButton" name="button_buyMarkable">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>260</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Add to cart</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_unmark">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>220</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Uncheck all</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_deleteMarkable">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>220</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delete selected</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_markAll">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>220</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Select all</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_countMarkable">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>220</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Calculate selected</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_spend">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>250</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Spend</string>
+     </property>
+     <widget class="QLabel" name="label_spend">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_gain">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>250</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Gain</string>
+     </property>
+     <widget class="QLabel" name="label_gain">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_profit">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>250</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Profit</string>
+     </property>
+     <widget class="QLabel" name="label_profit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTreeWidget" name="GamesTreeWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>611</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Games</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Game price</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Sell orders</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Profit</string>
+      </property>
+     </column>
+    </widget>
+    <zorder>groupBox_gain</zorder>
+    <zorder>groupBox_profit</zorder>
+    <zorder>groupBox_spend</zorder>
+    <zorder>button_buyMarkable</zorder>
+    <zorder>button_unmark</zorder>
+    <zorder>button_deleteMarkable</zorder>
+    <zorder>button_markAll</zorder>
+    <zorder>button_countMarkable</zorder>
+    <zorder>GamesTreeWidget</zorder>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_browser">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>651</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Steam Browser</string>
+    </property>
+    <widget class="QPushButton" name="button_login">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Log In</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_start">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>10</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start</string>
+     </property>
+     <property name="icon">
+      <iconset resource="spmres.qrc">
+       <normaloff>:/buttons/play.ico</normaloff>:/buttons/play.ico</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_stop">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>10</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+     <property name="icon">
+      <iconset resource="spmres.qrc">
+       <normaloff>:/buttons/stop.png</normaloff>:/buttons/stop.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_login">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>461</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <zorder>label_login</zorder>
+    <zorder>button_start</zorder>
+    <zorder>button_stop</zorder>
+    <zorder>button_login</zorder>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>671</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="action_settings"/>
+    <addaction name="actionInformation"/>
+    <addaction name="actionRussian"/>
+    <addaction name="actionEnglish"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="action_settings"/>
+   <addaction name="actionInformation"/>
+   <addaction name="actionEnglish"/>
+   <addaction name="actionRussian"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_settings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionRussian">
+   <property name="text">
+    <string>Русский</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="actionInformation">
+   <property name="text">
+    <string>Information</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="spmres.qrc"/>
+ </resources>
+ <connections/>
+</ui>
