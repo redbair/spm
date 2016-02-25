@@ -29,7 +29,6 @@ Menu::Menu(QWidget *parent) :
     ui->GamesTreeWidget->header()->resizeSection(0, 292);
     ui->GamesTreeWidget->setSortingEnabled(true);
     ui->statusBar->addPermanentWidget(progressBar);
-    ui->statusBar->showMessage(tr("Ready to work"));
     ui->button_stop->hide();
     ui->button_start->setEnabled(false);
     //ui->menuBar->hide();
@@ -148,6 +147,7 @@ void Menu::changeTranslator(QString postfix)                  //language changes
     connect(settings, SIGNAL(updateSettings()), this, SLOT(saveSettings()));
     delete info;
     info = new Info(0);
+    ui->statusBar->showMessage(tr("Ready to work"));
 }
 //------------------------------------------------------------
 void Menu::on_button_login_clicked()                          //login button
