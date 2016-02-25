@@ -18,8 +18,8 @@ Menu::Menu(QWidget *parent) :
     ui->setupUi(this);
     appSettings     = new QSettings("settings.ini", QSettings::IniFormat, this);
     loadSettings();
-    settings        = new Settings(0);
-    info            = new Info(0);
+    settings        = new Settings(this);
+    info            = new Info(this);
     browser         = new QWebView;
     progressBar     = new QProgressBar;
     timer           = new QTimer(this);
@@ -145,6 +145,7 @@ void Menu::changeTranslator(QString postfix)                  //language changes
     ui->retranslateUi(this);
     delete settings;
     settings = new Settings(0);
+    connect(settings, SIGNAL(updateSettings()), this, SLOT(saveSettings()));
     delete info;
     info = new Info(0);
 }
