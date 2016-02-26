@@ -87,7 +87,7 @@ void Menu::parseToTree(QString name, double price,            //parsing to Games
 
     pgame->setFlags(pgame->flags() | Qt::ItemIsUserCheckable);
     pgame->setCheckState(0, Qt::Unchecked);
-    ui->statusBar->showMessage(tr("Processed") + QString::number(checkedGames) + tr(" of ") + countOfGames);
+    ui->statusBar->showMessage(tr("Processed ") + QString::number(checkedGames) + tr(" of ") + countOfGames);
     on_button_start_clicked();
 }
 //------------------------------------------------------------
