@@ -93,13 +93,18 @@ void Menu::parseToTree(QString name, double price,            //parsing to Games
 //------------------------------------------------------------
 void Menu::parseToCart()                                      //buying games
 {
+    ui->button_buyMarkable->setEnabled(false);
     if(cart.isEmpty() && countCart == 0)
+    {
+        ui->button_buyMarkable->setEnabled(true);
         return;
+    }
     else if(cart.isEmpty() && countCart > 0)
     {
         browser_mode = 0;
         browser->load(QUrl("http://store.steampowered.com/cart/"));
         browser->show();
+        ui->button_buyMarkable->setEnabled(true);
     }
     else
     {
@@ -372,6 +377,7 @@ void Menu::on_button_deleteMarkable_clicked()                                   
 //------------------------------------------------------------------------------------------
 void Menu::on_button_buyMarkable_clicked()                                                //add to cart markable games
 {
+    cart.clear();
     QTreeWidgetItem* itm;
     for(int i = 0; i < ui->GamesTreeWidget->topLevelItemCount(); i++)
     {
