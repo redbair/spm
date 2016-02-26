@@ -188,7 +188,7 @@ p, li { white-space: pre-wrap; }
         <translation>Информация</translation>
     </message>
     <message>
-        <location filename="menu.cpp" line="150"/>
+        <location filename="menu.cpp" line="155"/>
         <source>Ready to work</source>
         <translation>Готовы к работе</translation>
     </message>
@@ -198,7 +198,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="menu.cpp" line="90"/>
-        <location filename="menu.cpp" line="108"/>
+        <location filename="menu.cpp" line="113"/>
         <source> of </source>
         <translation> из </translation>
     </message>
@@ -208,51 +208,56 @@ p, li { white-space: pre-wrap; }
         <translation>Обработанно </translation>
     </message>
     <message>
-        <location filename="menu.cpp" line="108"/>
+        <location filename="menu.cpp" line="113"/>
         <source>Adding games into the cart </source>
         <translation>Добавление игр в корзину </translation>
     </message>
     <message>
-        <location filename="menu.cpp" line="124"/>
-        <location filename="menu.cpp" line="154"/>
-        <location filename="menu.cpp" line="191"/>
+        <location filename="menu.cpp" line="129"/>
+        <location filename="menu.cpp" line="159"/>
+        <location filename="menu.cpp" line="196"/>
         <source>Connected as </source>
         <translation>Подключен как </translation>
     </message>
     <message>
-        <location filename="menu.cpp" line="126"/>
-        <location filename="menu.cpp" line="156"/>
-        <location filename="menu.cpp" line="193"/>
+        <location filename="menu.cpp" line="131"/>
+        <location filename="menu.cpp" line="161"/>
+        <location filename="menu.cpp" line="198"/>
         <source>Connected</source>
         <translation>Подключен</translation>
     </message>
     <message>
-        <location filename="menu.cpp" line="165"/>
+        <location filename="menu.cpp" line="170"/>
         <source>Authorization...</source>
         <translation>Идет процесс авторизации</translation>
     </message>
     <message>
-        <location filename="menu.cpp" line="172"/>
+        <location filename="menu.cpp" line="177"/>
         <source>&lt;CENTER&gt;There is something wrong&lt;br&gt;Try to repeat.&lt;/CENTER&gt;</source>
         <translation>&lt;CENTER&gt;Что-то пошло не так&lt;br&gt;Попробуйте повторить операцию.&lt;/CENTER&gt;</translation>
     </message>
     <message>
-        <location filename="menu.cpp" line="175"/>
+        <location filename="menu.cpp" line="180"/>
         <source>Error, browser did not download the page</source>
         <translation>Произошла ошибка, браузер не смог загрузить страницу</translation>
     </message>
     <message>
-        <location filename="menu.cpp" line="183"/>
+        <location filename="menu.cpp" line="188"/>
         <source>You are not authorized!Please do it!</source>
         <translation>Вы не авторизированны, авторизируйтесь!</translation>
     </message>
     <message>
-        <location filename="menu.cpp" line="195"/>
-        <source>You are successful authorized!</source>
+        <location filename="menu.cpp" line="200"/>
+        <source>You have successfully logged in!</source>
+        <oldsource>you have successfully logged in!</oldsource>
         <translation>Авторизация прошла успешно!</translation>
     </message>
     <message>
-        <location filename="menu.cpp" line="230"/>
+        <source>You are successful authorized!</source>
+        <translation type="vanished">Авторизация прошла успешно!</translation>
+    </message>
+    <message>
+        <location filename="menu.cpp" line="235"/>
         <source>Checking games from store page</source>
         <translation>Считываем игры с магазина </translation>
     </message>

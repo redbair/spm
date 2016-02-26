@@ -197,7 +197,7 @@ void Menu::loadFinished(bool bOk)                              //browser loading
             else
                 ui->label_login->setText(tr("Connected"));
             ui->label_login->setStyleSheet("QLabel { color : green; }");
-            ui->statusBar->showMessage(tr("You are successful authorized!"));
+            ui->statusBar->showMessage(tr("You have successfully logged in!"));
             ui->button_login->hide();
         }
     }
