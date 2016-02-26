@@ -148,6 +148,13 @@ void Menu::changeTranslator(QString postfix)                  //language changes
     delete info;
     info = new Info(0);
     ui->statusBar->showMessage(tr("Ready to work"));
+    if(isLogin)
+    {
+        if(showLogin)
+            ui->label_login->setText(tr("Connected as ") + stringLogin);
+        else
+            ui->label_login->setText(tr("Connected"));
+    }
 }
 //------------------------------------------------------------
 void Menu::on_button_login_clicked()                          //login button
