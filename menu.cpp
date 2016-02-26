@@ -390,6 +390,7 @@ void Menu::on_button_stop_clicked()                         //stop scan
         ui->button_buyMarkable->setEnabled(true);
         scanOn = false;
     }
+    ui->statusBar->clearMessage();
 }
 //-----------------------------------------------------------
 void Menu::on_button_countMarkable_clicked()                //count all markable
