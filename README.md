@@ -5,4 +5,4 @@ Programm for searching games with profitable cards
 Steam Group: 
 http://steamcommunity.com/groups/spmgroup  
 ***
->Buy Author: This is my first project don't be mad for code and my english ;)
+>By Author: This is my first project don't be mad for code and my english ;)
