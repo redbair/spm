@@ -5,6 +5,6 @@ Programm for searching games with profitable cards
 Steam Group: 
 http://steamcommunity.com/groups/spmgroup  
 ***
-[Релизы/Releases] (https://github.com/AmirAfendin/SPM/releases)
+[Скачать релизы / Download releases] (https://github.com/AmirAfendin/SPM/releases)
 ***
 >By Author: This is my first project don't be mad for code and my english ;)
