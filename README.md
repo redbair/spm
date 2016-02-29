@@ -7,7 +7,3 @@ http://steamcommunity.com/groups/spmgroup
   
   
 *****************************
-By Author:
-This is my first project,  
-sorry for maybe weird code  
-and my english btw:D  
