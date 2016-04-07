@@ -190,7 +190,6 @@ void Menu::loadFinished(bool bOk)                              //browser loading
         else
         {
             isLogin = true;
-            browser->hide();
             ui->button_start->setEnabled(true);
             if(showLogin)
                 ui->label_login->setText(tr("Connected as ") + stringLogin);
